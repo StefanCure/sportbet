@@ -77,7 +77,6 @@ h2,
 h3,
 h4 {
   letter-spacing: var(--spacing);
-  text-transform: capitalize;
   line-height: 1.25;
   margin-bottom: 0.75rem;
 }
@@ -95,7 +94,6 @@ h4 {
 }
 p {
   margin-bottom: 1.25rem;
-  color: var(--clr-grey-5);
 }
 @media screen and (min-width: 800px) {
   h1 {
@@ -347,6 +345,9 @@ Stripe Styles
   padding-top: 1em;
   padding-bottom: 2em;
 }
+.jobs h3 {
+  text-align: center;
+}
 
 .jobs table {
   border-collapse: collapse;
@@ -383,8 +384,78 @@ table button {
   background-color: black !important;
   color: white !important;
 }
+.table_head1 {
+  background-color: #fff;
+  color: #222;
+  font-weight: 900 !important;
+}
+.tab_tables {
+  padding: 1.5em 0em;
+}
+.cat-btn1 {
+  padding: .3em 1.5em;
+  border-radius: 5px;
+  font-size: .9em;
+  margin-right: 8em;
+  background: transparent;
+  border: transparent;
+  cursor: pointer;
+}
+
+.cat-1 {
+  padding: .3em 5em;
+  background:rgb(231, 230, 230);
+  border: white
+}
+
+
+
+.cat-btn1 span {
+  display: block;
+}
 .empty_div {
   background-color: #222;
-  height: 280px;
+  height: 200px;
 }
+}
+
+.sec-category {
+  padding: 1.5em 6em;
+  background-color: #444;
+  color: #fff;
+}
+
+.sec-category p {
+  color: rgb(212, 211, 211);
+  font-size: .85em;
+  margin-top: -5px;
+}
+
+.sec-category h2 {
+  font-size: 1.8em;
+}
+
+.div_btn {
+  padding-top: 1.2em;
+  
+}
+
+.cat-btn {
+  padding: .3em 1.5em;
+  border-radius: 5px;
+  font-size: 1.5em;
+  margin-right: 1em;
+}
+
+.cat-btn a {
+  text-decoration: none !important;
+  color: #222;
+}
+
+.sec_txt {
+  padding: 3em 6em;
+}
+.sec_txt h2{
+  text-align: center;
+  font-size: 1.5em;
 }
