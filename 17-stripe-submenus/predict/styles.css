@@ -59,8 +59,8 @@ Global Styles
   box-sizing: border-box;
 }
 body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
-    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   background: var(--clr-white);
   color: var(--clr-grey-1);
   line-height: 1.5;
@@ -124,25 +124,28 @@ p {
 Stripe Styles
 ===============
 */
-.nav {
+
+.my-nav {
   height: 5rem;
   display: flex;
   align-items: center;
   justify-content: center;
   background: transparent;
-  position: relative;
-  z-index: 1;
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 5;
 }
-.nav-center {
-  width: 60vw;
+.nav_center {
+  width: 90vw;
   max-width: var(--max-width);
 }
-.nav-header {
+.nav_header {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.btn {
+.btn-my {
   font-size: 1rem;
   padding: 0.25rem 0.75rem;
   border-radius: var(--radius);
@@ -152,10 +155,10 @@ Stripe Styles
   cursor: pointer;
   transition: var(--transition);
 }
-.btn:hover {
+.btn-my:hover {
   background: var(--clr-grey-5);
 }
-.nav-links {
+.nav_links {
   display: none;
 }
 .link-btn {
@@ -169,25 +172,25 @@ Stripe Styles
   letter-spacing: 1px;
 }
 
-
 /* nav media query */
 @media screen and (min-width: 800px) {
-  .nav {
+  .my-nav {
     background: var(--clr-black);
   }
 
-  .nav-center {
+  .nav_center {
     display: grid;
     grid-template-columns: auto 1fr auto;
     align-items: center;
+    width: 70vw;
   }
-  .toggle-btn {
+  .toggle-btn-my {
     display: none;
   }
   .signin-btn {
     display: inline-block;
   }
-  .nav-links {
+  .nav_links {
     display: block;
     justify-self: center;
     display: grid;
@@ -197,8 +200,9 @@ Stripe Styles
     display: grid;
     align-items: center;
     margin-left: auto;
+    margin-top: auto;
   }
-  .nav-links li {
+  .nav_links li {
     height: 100%;
   }
   .link-btn a {
@@ -212,7 +216,7 @@ Stripe Styles
   .nav__link:after {
     content: "";
     position: absolute;
-    bottom: -2.5em;
+    bottom: -2.4em;
     left: 50%;
     right: 0;
     height: 2.1em;
@@ -225,7 +229,7 @@ Stripe Styles
     transition: transform 150ms ease-in-out;
     transition: transform 150ms ease-in-out, -webkit-transform 150ms ease-in-out;
   }
-  
+
   .nav__link:hover::after {
     -webkit-transform: scaleY(1);
     transform: scaleY(1);
@@ -237,20 +241,9 @@ Stripe Styles
   }
 
   .nav__link-active::after {
-    content: "";
-    position: absolute;
-    bottom: -2.5em;
-    left: 50%;
-    right: 0;
-    height: 2.1em;
-    width: 2px;
-    background: #2c84ef;
-    -webkit-transform: scaleX(0);
-    transform-origin: top;
     transform: scaleY(1);
   }
 }
-
 
 /* sidebar */
 .sidebar-wrapper {
@@ -325,7 +318,7 @@ Stripe Styles
   border-radius: var(--radius);
 }
 .submenu::before {
-  content: '';
+  content: "";
   display: block;
   width: 0;
   height: 0;
@@ -346,15 +339,6 @@ Stripe Styles
   display: grid;
   gap: 0.25rem 2rem;
 }
-.col-2 {
-  grid-template-columns: repeat(2, 1fr);
-}
-.col-3 {
-  grid-template-columns: repeat(3, 1fr);
-}
-.col-4 {
-  grid-template-columns: repeat(4, 1fr);
-}
 .submenu h4 {
   margin-bottom: 1.5rem;
 }
@@ -369,13 +353,62 @@ Stripe Styles
   margin-right: 1rem;
 }
 
+/* my table tabs start */
+.sec_1 {
+  padding: 70px 1em 2em 1em;
+}
+.span {
+  display: block;
+}
+
+.my_tab_change {
+  display: block;
+  justify-self: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  text-align: center;
+  padding-bottom: 1em;
+}
+.my_tab_link {
+  text-decoration: none !important;
+  font-weight: 700;
+}
+.table_title {
+  text-align: center;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+.table_head {
+  color: white;
+  background-color: black;
+  font-weight: 700;
+  border-top: none !important;
+}
+
+td div {
+  text-align: center;
+}
+
+@media screen and (min-width: 800px) {
+  .sec_1 {
+    padding: 110px 6em 3em 6em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .my_tab_contain {
+    width: 65%;
+  }
+}
+
+/* My footer start */
 footer {
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: var(--clr-black);
 }
- 
+
 .nav_footer {
   height: 5rem;
   display: flex;
@@ -386,15 +419,15 @@ footer {
 .footer_link {
   display: block;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr ;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   text-align: center;
   height: 100%;
   align-items: center;
-  
+  margin-top: auto;
 }
 
 .foot_btn {
-  font-size: .65em;
+  font-size: 0.65em;
 }
 
 @media screen and (min-width: 800px) {
@@ -406,7 +439,7 @@ footer {
     background: var(--clr-black);
     position: relative;
     z-index: 1;
-    width: 60vw;
+    width: 70vw;
   }
   .footer_link {
     grid-template-columns: 1fr 1fr 1fr 1fr;

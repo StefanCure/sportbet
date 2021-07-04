@@ -1,13 +1,13 @@
 import sublinks from './data.js';
 
-const toggleBtn = document.querySelector('.toggle-btn');
+const toggleBtn = document.querySelector('.toggle-btn-my');
 const closeBtn = document.querySelector('.close-btn');
 const sidebarWrapper = document.querySelector('.sidebar-wrapper');
 const sidebar = document.querySelector('.sidebar-links');
 const linkBtns = [...document.querySelectorAll('.link-btn')];
 const submenu = document.querySelector('.submenu');
 const hero = document.querySelector('.hero');
-const nav = document.querySelector('.nav');
+const nav = document.querySelector('.my-nav');
 // hide/show sideabar
 toggleBtn.addEventListener('click', () => {
   sidebarWrapper.classList.add('show');
