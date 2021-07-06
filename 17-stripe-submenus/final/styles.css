@@ -59,8 +59,8 @@ Global Styles
   box-sizing: border-box;
 }
 body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
-    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   background: var(--clr-white);
   color: var(--clr-grey-1);
   line-height: 1.5;
@@ -162,7 +162,6 @@ Stripe Styles
   display: none;
 }
 
-
 /* nav media query */
 @media screen and (min-width: 800px) {
   .nav {
@@ -209,7 +208,6 @@ Stripe Styles
     color: white !important;
   }
 }
-
 
 /* sidebar */
 .sidebar-wrapper {
@@ -284,7 +282,7 @@ Stripe Styles
   border-radius: var(--radius);
 }
 .submenu::before {
-  content: '';
+  content: "";
   display: block;
   width: 0;
   height: 0;
@@ -329,94 +327,92 @@ Stripe Styles
 }
 
 @media screen and (min-width: 800px) {
-.my_main{
-  display: grid;
-  grid-template-columns: auto 450px;
-}
-.main-ads {
-  background-color: #222;
-  height: 100%;
-}
-.sec_table {
-  padding: 3em 6em 3em 6em;
-}
+  .my_main {
+    display: grid;
+    grid-template-columns: auto 450px;
+  }
+  .main-ads {
+    background-color: #222;
+    height: 100%;
+  }
+  .sec_table {
+    padding: 3em 6em 3em 6em;
+  }
 
-.jobs {
-  padding-top: 1em;
-  padding-bottom: 2em;
-}
-.jobs h3 {
-  text-align: center;
-}
+  .jobs {
+    padding-top: 1em;
+    padding-bottom: 2em;
+  }
+  .jobs h3 {
+    text-align: center;
+  }
 
-.jobs table {
-  border-collapse: collapse;
-  margin-top: 1rem;
-  overflow-x: auto;
-}
+  .jobs table {
+    border-collapse: collapse;
+    margin-top: 1rem;
+    overflow-x: auto;
+  }
 
-.jobs table td div {
-  background: #fff;
-  height: 45px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 0.85rem;
-  color: #444;
-  font-weight: 500;
-}
+  .jobs table td div {
+    background: #fff;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.85rem;
+    color: #444;
+    font-weight: 500;
+  }
 
-table button {
-  background: #8da2fb;
-  color: midnightblue;
-  border: 1px solid #8da2fb;
-  padding: 0.1rem;
-  border-radius: 3px;
-}
+  table button {
+    background: #8da2fb;
+    color: midnightblue;
+    border: 1px solid #8da2fb;
+    padding: 0.1rem;
+    border-radius: 3px;
+  }
 
-.table-responsive {
-  overflow: auto;
-}
-.even {
-  background-color: rgb(231, 230, 230) !important;
-}
-.table_head {
-  background-color: black !important;
-  color: white !important;
-}
-.table_head1 {
-  background-color: #fff;
-  color: #222;
-  font-weight: 900 !important;
-}
-.tab_tables {
-  padding: 1.5em 0em;
-}
-.cat-btn1 {
-  padding: .3em 1.5em;
-  border-radius: 5px;
-  font-size: .9em;
-  margin-right: 8em;
-  background: transparent;
-  border: transparent;
-  cursor: pointer;
-}
+  .table-responsive {
+    overflow: auto;
+  }
+  .even {
+    background-color: rgb(231, 230, 230) !important;
+  }
+  .table_head {
+    background-color: black !important;
+    color: white !important;
+  }
+  .table_head1 {
+    background-color: #fff;
+    color: #222;
+    font-weight: 900 !important;
+  }
+  .tab_tables {
+    padding: 1.5em 0em;
+  }
+  .cat-btn1 {
+    padding: 0.3em 1.5em;
+    border-radius: 5px;
+    font-size: 0.9em;
+    margin-right: 8em;
+    background: transparent;
+    border: transparent;
+    cursor: pointer;
+  }
 
-.cat-1 {
-  padding: .3em 5em;
-  background:rgb(231, 230, 230);
-  border: white
-}
+  .cat-1 {
+    padding: 0.3em 5em;
+    background: rgb(231, 230, 230);
+    border: white;
+  }
 
-
-
-.cat-btn1 span {
-  display: block;
-}
-.empty_div {
-  background-color: #222;
-  height: 200px;
-}
+  .cat-btn1 span {
+    display: block;
+  }
+  .empty_div {
+    background-color: #222;
+    height: 200px;
+  }
 }
 
 .sec-category {
@@ -427,7 +423,7 @@ table button {
 
 .sec-category p {
   color: rgb(212, 211, 211);
-  font-size: .85em;
+  font-size: 0.85em;
   margin-top: -5px;
 }
 
@@ -437,11 +433,10 @@ table button {
 
 .div_btn {
   padding-top: 1.2em;
-  
 }
 
 .cat-btn {
-  padding: .3em 1.5em;
+  padding: 0.3em 1.5em;
   border-radius: 5px;
   font-size: 1.5em;
   margin-right: 1em;
@@ -455,7 +450,7 @@ table button {
 .sec_txt {
   padding: 3em 6em;
 }
-.sec_txt h2{
+.sec_txt h2 {
   text-align: center;
   font-size: 1.5em;
 }

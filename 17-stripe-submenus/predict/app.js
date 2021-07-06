@@ -8,6 +8,7 @@ const linkBtns = [...document.querySelectorAll('.link-btn')];
 const submenu = document.querySelector('.submenu');
 const hero = document.querySelector('.hero');
 const nav = document.querySelector('.my-nav');
+const tabLists = [...document.querySelectorAll('.tab_li')];
 // hide/show sideabar
 toggleBtn.addEventListener('click', () => {
   sidebarWrapper.classList.add('show');
