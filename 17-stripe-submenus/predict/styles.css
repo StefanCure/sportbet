@@ -262,7 +262,7 @@ Stripe Styles
 }
 .sidebar-wrapper.show {
   visibility: visible;
-  z-index: 2;
+  z-index: 50;
   transform: scale(1);
 }
 .sidebar {
