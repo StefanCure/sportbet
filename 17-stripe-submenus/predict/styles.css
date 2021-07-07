@@ -526,18 +526,29 @@ footer {
 
 /* About Page */
 .sec_breadcrumb {
-  padding: 25vh 6em;
-  background: white url(./images/breadcrumb.jpg);
+  padding: 7vh 2.5em;
+  background: #222 url(./images/breadcrumb.jpg);
   background-size: cover;
-  background-blend-mode: multiply;
+  background-blend-mode: overlay;
   position: relative;
+}
+
+.breadcrumb_title {
+  margin-top: 4em;
+  width: 78vw;
+}
+.breadcrumb_title h1 {
+  font-size: 2.5em;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 35px;
 }
 
 .breadcrumb {
   display: -ms-flexbox;
   position: absolute;
-  left: 9em;
-  bottom: 0;
+  left: 2em;
+  bottom: 2em;
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
@@ -552,8 +563,11 @@ footer {
 .breadcrumb-item + .breadcrumb-item::before {
   display: inline-block;
   padding-right: 0.5rem;
+  padding-top: 2px;
   color: #2c84ef;
-  content: ">";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f0da";
 }
 
 .breadcrumb-item {
@@ -561,9 +575,39 @@ footer {
 }
 
 .breadcrumb-item a {
-  color: #222;
+  color: #fff;
+  text-decoration: none;
 }
 
 .breadcrumb-item.active {
   color: #2c84ef;
+}
+
+@media screen and (min-width: 800px) {
+  .sec_breadcrumb {
+    padding: 10vh 6em;
+  }
+
+  .breadcrumb_title {
+    margin-top: 5em;
+    width: 78vw;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .breadcrumb {
+    left: 9em;
+    bottom: 2em;
+    display: flex;
+    padding: 0.75rem 1rem;
+    margin-bottom: 0rem;
+    list-style: none;
+    margin-top: 0em;
+    width: 80vw;
+  }
+  .breadcrumb_title h1 {
+    font-size: 2.5em;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 35px;
+  }
 }
