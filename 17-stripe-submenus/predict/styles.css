@@ -126,7 +126,7 @@ Stripe Styles
 */
 
 .my-nav {
-  height: 5rem;
+  height: 4rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -175,6 +175,7 @@ Stripe Styles
 /* nav media query */
 @media screen and (min-width: 800px) {
   .my-nav {
+    height: 5rem;
     background: var(--clr-black);
   }
 
@@ -610,5 +611,80 @@ footer {
     font-weight: 700;
     color: #fff;
     margin-bottom: 35px;
+  }
+}
+
+/* About section content */
+
+.sec_content {
+  padding: 2em 1em;
+  margin: 0em;
+}
+
+.sec_content_txt {
+  background-color: #222;
+  color: white;
+  padding: 2em 0em 2em 2em;
+}
+.image_res {
+  display: block;
+  max-width: 100%;
+  margin: 0;
+}
+.my_btn1 {
+  padding: 0.3em 1.5em;
+  font-size: 1.5em;
+  font-weight: 500;
+  color: #222;
+  background-color: white;
+  border: 2px solid #222;
+}
+
+.my_btn1:hover {
+  background-color: #222;
+  color: white;
+  border-color: #222;
+}
+.content_bttn {
+  margin-top: 1em;
+}
+
+@media screen and (min-width: 800px) {
+  .sec_content {
+    padding: 3em 1em;
+    width: 80vw;
+    margin: 0em auto;
+  }
+  .div_content {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+  }
+
+  .sec_content_img {
+    grid-column: 1/8;
+  }
+
+  .sec_content_img,
+  .sec_content_txt,
+  .content_bttn {
+    grid-row: 1/2;
+  }
+
+  .content_bttn {
+    grid-column: 9/9;
+    z-index: 2;
+    align-self: flex-end;
+    padding-right: 8em;
+    margin-top: 0em;
+  }
+
+  .sec_content_txt {
+    background-color: #222;
+    color: white;
+    grid-column: 4/-1;
+    align-self: center;
+    padding: 2em;
+    box-shadow: 0.25em 0.25em 0.75em rgba(0, 0, 0, 0.25),
+      0.125em 0.125em 0.25em rgba(0, 0, 0, 0.15);
   }
 }

@@ -13,7 +13,7 @@ const sublinks = [
   },
   {
     page: 'CONTACT US',
-    links: 'about.html'
+    links: 'contact.html'
   },
 ];
 
