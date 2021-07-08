@@ -130,7 +130,7 @@ Stripe Styles
   display: flex;
   align-items: center;
   justify-content: center;
-  background: transparent;
+  background: white;
   position: fixed;
   left: 0;
   right: 0;
@@ -292,6 +292,7 @@ Stripe Styles
   text-decoration: none;
   color: #222;
   font-weight: bolder;
+  color: #2c84ef;
 }
 .sidebar-sublinks i {
   color: var(--clr-grey-5);
