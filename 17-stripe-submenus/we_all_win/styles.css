@@ -396,6 +396,25 @@ Stripe Styles
 
 .nav .nav-item .nav-link {
   color: #fff;
+  font-size: 0.5em;
+}
+
+@media screen and (min-width: 390px) {
+  .nav .nav-item .nav-link {
+    font-size: 0.8em;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .nav .nav-item .nav-link {
+    font-size: 0.9em;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .nav .nav-item .nav-link {
+    font-size: 1em;
+  }
 }
 
 .my_nav_header {
@@ -443,6 +462,9 @@ tbody {
 .table-bordered th {
   border: 1px solid #222 !important;
 }
+.my_tab_contain {
+  width: 100%;
+}
 
 @media screen and (min-width: 800px) {
   .sec_1 {
@@ -452,7 +474,13 @@ tbody {
     justify-content: center;
   }
   .my_tab_contain {
-    width: 60%;
+    width: 80%;
+  }
+}
+
+@media screen and (min-width: 1129px) {
+  .my_tab_contain {
+    width: 70%;
   }
 }
 
@@ -472,7 +500,7 @@ tbody {
 }
 .my_btn {
   padding: 1.5em 1.5em;
-  font-size: 3em;
+  font-size: 2.2em;
   background-color: #034389;
   position: relative;
   z-index: 1;
@@ -491,7 +519,7 @@ tbody {
 
 .my_btn11 {
   padding: 1.5em 1.5em;
-  font-size: 3em;
+  font-size: 2.2em;
   background-color: #034389;
   position: relative;
   z-index: 1;
