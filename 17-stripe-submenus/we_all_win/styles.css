@@ -254,7 +254,8 @@ Stripe Styles
   width: 100%;
   height: 100%;
   display: grid;
-  place-items: center;
+  align-items: space-between;
+  justify-content: center;
   visibility: hidden;
   z-index: -999;
   transition: var(--transition);
@@ -268,13 +269,14 @@ Stripe Styles
 }
 .sidebar {
   width: 90vw;
-  height: 95vh;
+  height: 30vh;
   max-width: var(--fixed-width);
   background: var(--clr-white);
   border-radius: var(--radius);
   box-shadow: var(--dark-shadow);
   position: relative;
-  padding: 4rem 2rem;
+  padding: 3rem 2rem 4rem 2rem;
+  margin-top: 4em;
 }
 .close-btn {
   font-size: 2rem;
@@ -662,8 +664,8 @@ footer {
 
 /* About Page */
 .sec_breadcrumb {
-  padding: 7vh 2.5em;
-  background: #222 url(./images/breadcrumb.jpg);
+  padding: 2vh 2.5em;
+  background: rgb(24, 24, 24) url(./images/breadcrumb.jpg);
   background-size: cover;
   background-blend-mode: overlay;
   position: relative;
@@ -677,14 +679,14 @@ footer {
   font-size: 2.5em;
   font-weight: 700;
   color: #fff;
-  margin-bottom: 35px;
+  margin-bottom: 15px;
 }
 
 .breadcrumb {
   display: -ms-flexbox;
   position: absolute;
   left: 2em;
-  bottom: 2em;
+  bottom: 0em;
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
@@ -721,7 +723,7 @@ footer {
 
 @media screen and (min-width: 800px) {
   .sec_breadcrumb {
-    padding: 10vh 6em;
+    padding: 4vh 6em;
   }
 
   .breadcrumb_title {
@@ -732,7 +734,7 @@ footer {
   }
   .breadcrumb {
     left: 9em;
-    bottom: 2em;
+    bottom: 0.5em;
     display: flex;
     padding: 0.75rem 1rem;
     margin-bottom: 0rem;
