@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Predict</title>
+    <!-- Bootstrap Css Start Here -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+
+
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="capp.css" />
+</head>
+
+<body>
+    <!-- navbar -->
+    <header>
+        <nav class="my-nav">
+            <div class="nav_center">
+                <div class="nav_header">
+                    <img src="./images/logo.svg" class="nav-logo" alt="" />
+                    <button class="btn-my toggle-btn-my">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+                <ul class="nav_links">
+                    <li>
+                        <button class="link-btn"><a href="index.html"
+                                class="nav__link">HOME</a></button>
+                    </li>
+                    <li>
+                        <button class="link-btn"><a href="index.html" class="nav__link">TIPSTORE</a></button>
+                    </li>
+                    <li>
+                        <button class="link-btn"><a href="index.html" class="nav__link">ABOUT</a></button>
+                    </li>
+                    <li>
+                        <button class="link-btn"><a href="index.html" class="nav__link nav__link-active">CONTACT US</a></button>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!-- breadcrumb -->
+        <section class="sec_breadcrumb">
+            <div class="breadcrumb_title">
+                <h1>Contact Us</h1>
+            </div>
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                <li class="breadcrumb-item active">Contact</li>
+            </ol>
+        </section>
+        <section class="my_sec_contact">
+            <h2 >How can we be of help to you</h2>
+            <div class="contact">
+                <form class="contact-form">
+                    <label>
+                        <p>Your Name:</p>
+                        <input type="text" name="yourname" placeholder="Name">
+                    </label>
+                    <label class="label">
+                        <p>Your email:</p>
+                        <input type="email" name="_replyto" placeholder="Email">
+                    </label>
+                    <label>
+                        <p>Your message: </p>
+                        <textarea name="message" placeholder="Messages...."></textarea>
+                    </label>
+                    <button type="submit" class="form-btn1">Send</button>
+                </form>
+                
+                <div class="contact-form-text">
+                    <h3>We are open for business 24/7:</h3>
+                    <p>You can book an appointment with us by reaching out to us on either of our phone numbers</p>
+                    <p>08068321894</p>
+                    <p>08036791766</p>
+                    <p>Or you can visit us at our head office located at:</p>
+                    <p>No.1 Farm Road,
+                        Ajata Isieke Ibeku Village,
+                        Umuahia North Local Government Area,
+                        Abia State, Nigeria.
+                    </p>
+                </div>
+                </div>
+            </div>
+            
+        </section>
+        
+    </main>
+    <!-- sidebar -->
+    <div class="sidebar-wrapper">
+        <aside class="sidebar">
+            <button class="close-btn">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="sidebar-links"></div>
+            <!-- links -->
+        </aside>
+    </div>
+    <!-- links -->
+    <aside class="submenu"></aside>
+    <footer>
+        <div class="nav_footer">
+            <ul class="footer_link">
+                <li>
+                    <button class="link-btn foot_btn">HOME</button>
+                </li>
+                <li>
+                    <button class="link-btn foot_btn">TIPSTORE</button>
+                </li>
+                <li>
+                    <button class="link-btn foot_btn">ABOUT</button>
+                </li>
+                <li>
+                    <button class="link-btn foot_btn">CONTACT US</button>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+    <!-- Jquery Js Start Here -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <!-- Bootstrap Js Start Here -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- App Js Start Here -->
+    <script type="module" src="app.js"></script>
+</body>
+
+</html>
