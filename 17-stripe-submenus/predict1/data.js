@@ -5,15 +5,15 @@ const sublinks = [
   },
   {
     page: 'TIPSCORE',
-    links:  'products.html'
+    links:  'index.html'
   },
   {
     page: 'ABOUT',
-    links: 'products.html'
+    links: 'about.html'
   },
   {
     page: 'CONTACT US',
-    links: 'products.html'
+    links: 'contact.html'
   },
 ];
 

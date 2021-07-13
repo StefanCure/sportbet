@@ -123,28 +123,25 @@ p {
 Stripe Styles
 ===============
 */
-
-.my-nav {
-  height: 4rem;
+.nav {
+  height: 5rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: white;
-  position: fixed;
-  left: 0;
-  right: 0;
-  z-index: 5;
+  background: transparent;
+  position: relative;
+  z-index: 1;
 }
-.nav_center {
-  width: 90vw;
+.nav-center {
+  width: 60vw;
   max-width: var(--max-width);
 }
-.nav_header {
+.nav-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.btn-my {
+.btn {
   font-size: 1rem;
   padding: 0.25rem 0.75rem;
   border-radius: var(--radius);
@@ -154,10 +151,10 @@ Stripe Styles
   cursor: pointer;
   transition: var(--transition);
 }
-.btn-my:hover {
+.btn:hover {
   background: var(--clr-grey-5);
 }
-.nav_links {
+.nav-links {
   display: none;
 }
 .link-btn {
@@ -173,27 +170,22 @@ Stripe Styles
 
 /* nav media query */
 @media screen and (min-width: 800px) {
-  .my-nav {
-    height: 4rem;
-    align-items: center;
-    justify-content: flex-start;
+  .nav {
     background: var(--clr-black);
-    padding-left: 6em;
   }
 
-  .nav_center {
+  .nav-center {
     display: grid;
     grid-template-columns: auto 1fr auto;
     align-items: center;
-    width: 70vw;
   }
-  .toggle-btn-my {
+  .toggle-btn {
     display: none;
   }
   .signin-btn {
     display: inline-block;
   }
-  .nav_links {
+  .nav-links {
     display: block;
     justify-self: center;
     display: grid;
@@ -203,9 +195,8 @@ Stripe Styles
     display: grid;
     align-items: center;
     margin-left: auto;
-    margin-top: auto;
   }
-  .nav_links li {
+  .nav-links li {
     height: 100%;
   }
   .link-btn a {
@@ -224,7 +215,7 @@ Stripe Styles
     right: 0;
     height: 2px;
     width: 100%;
-    background: #64bc7e;
+    background: #2c84ef;
     -webkit-transform: scaleX(0);
     transform-origin: right;
     transform: scaleX(0);
@@ -239,11 +230,17 @@ Stripe Styles
     transform-origin: left;
   }
 
-  .nav__link-active {
-    color: #64bc7e !important;
-  }
-
   .nav__link-active::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0%;
+    right: 0;
+    height: 3px;
+    width: 100%;
+    background: #2c84ef;
+    -webkit-transform: scaleX(0);
+    transform-origin: top;
     transform: scaleY(1);
   }
 }
@@ -265,7 +262,7 @@ Stripe Styles
 }
 .sidebar-wrapper.show {
   visibility: visible;
-  z-index: 50;
+  z-index: 2;
   transform: scale(1);
 }
 .sidebar {
@@ -295,7 +292,6 @@ Stripe Styles
   text-decoration: none;
   color: #222;
   font-weight: bolder;
-  color: #2c84ef;
 }
 .sidebar-sublinks i {
   color: var(--clr-grey-5);
@@ -343,6 +339,15 @@ Stripe Styles
   display: grid;
   gap: 0.25rem 2rem;
 }
+.col-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+.col-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+.col-4 {
+  grid-template-columns: repeat(4, 1fr);
+}
 .submenu h4 {
   margin-bottom: 1.5rem;
 }
@@ -356,308 +361,7 @@ Stripe Styles
   color: var(--clr-grey-5);
   margin-right: 1rem;
 }
-/* section table start here */
-.sec_table {
-  padding-top: 5em;
-}
-@media screen and (min-width: 800px) {
-  .sec_table {
-    padding-left: 6em;
-    padding-top: 6em;
-    width: 60vw;
-  }
-  .side_ads {
-    background-color: red;
-    position: fixed;
-    right: 0;
-    top: 4em;
-    bottom: 5em;
-    width: 450px;
-  }
-}
-/* custom tab start here */
-.nav-tabs .nav-link {
-  border: 1px solid transparent;
-  border-top-left-radius: 0.25rem;
-  border-top-right-radius: 0.25rem;
-}
-.nav-tabs .nav-link:focus,
-.nav-tabs .nav-link:hover {
-  border-color: #e9ecef #e9ecef #dee2e6;
-}
-.nav-tabs .nav-link.disabled {
-  color: #6c757d;
-  background-color: transparent;
-  border-color: transparent;
-}
-.nav-tabs .nav-item.show .nav-link,
-.nav-tabs .nav-link.active {
-  color: #495057;
-  background-color: #fff;
-  border-color: #dee2e6 #dee2e6 #fff;
-}
-.nav-pills .nav-link {
-  border-radius: 0.25rem;
-}
-.nav-pills .nav-link.active,
-.nav-pills .show > .nav-link {
-  color: #222 !important;
-  background-color: #037a01;
-  border-radius: 0em;
-  font-weight: 900 !important;
-}
-.nav-fill .nav-item {
-  -ms-flex: 1 1 auto;
-  flex: 1 1 auto;
-  text-align: center;
-}
-.nav .nav-item {
-  background-color: black;
-  margin-right: 1em;
-}
 
-.nav .nav-item .nav-link {
-  color: #64bc7e;
-  font-size: 0.5em;
-}
-
-@media screen and (min-width: 390px) {
-  .nav .nav-item .nav-link {
-    font-size: 0.8em;
-  }
-}
-
-@media screen and (min-width: 800px) {
-  .nav .nav-item .nav-link {
-    font-size: 0.9em;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .nav .nav-item .nav-link {
-    font-size: 1em;
-  }
-}
-
-.my_nav_header {
-  font-weight: 700;
-}
-
-/* my table tabs start */
-.span {
-  display: block;
-  font-weight: 700;
-}
-
-.span_vs1 {
-  font-weight: 900;
-  color: #fff;
-}
-.span_vs {
-  font-weight: 900;
-  color: #64bc7e;
-}
-.clr1 {
-  background-color: #037a01;
-}
-
-.my_tab_link {
-  text-decoration: none !important;
-  font-weight: 700;
-}
-.table_title {
-  text-align: center;
-  padding-top: 1em;
-  padding-bottom: 1em;
-}
-.table_head {
-  color: #037a01;
-  background-color: black;
-  font-weight: 700;
-  border-top: none !important;
-}
-
-td div {
-  text-align: center;
-}
-tbody {
-  background-color: #f5f5f5;
-  font-weight: 700;
-}
-.my_tbody {
-  background-color: #64bc7e;
-  font-weight: 700;
-}
-.table-bordered td,
-.table-bordered th {
-  border: 1px solid transparent !important;
-}
-
-.table-striped tbody tr:nth-of-type(odd) {
-  background-color: #037a01;
-}
-.my_tab_contain {
-  width: 100%;
-}
-
-@media screen and (min-width: 800px) {
-  .my_tab_contain {
-    width: 100%;
-  }
-}
-
-@media screen and (min-width: 1129px) {
-  .my_tab_contain {
-    width: 100%;
-  }
-}
-/* My mid advert banner start here */
-.mid_ads {
-  margin-left: auto;
-  margin-right: auto;
-  background-color: red;
-  margin-top: 2em;
-  margin-bottom: 2em;
-  width: 90vw;
-  height: 130px;
-}
-@media screen and (min-width: 800px) {
-  .mid_ads {
-    margin-left: 10em;
-    margin-right: auto;
-    background-color: red;
-    width: 40vw;
-  }
-}
-/* My second table start here */
-.scnd_table {
-  padding-left: 0em;
-  padding-top: 1em;
-  width: 100vw;
-}
-
-@media screen and (min-width: 800px) {
-  .scnd_table {
-    padding-left: 7em;
-    padding-top: 1em;
-    width: 60vw;
-  }
-}
-
-/* Section Category */
-.sec-category {
-  padding: 1.5em 1em;
-  background-color: #222730;
-  color: #037a01;
-  margin-right: auto;
-  margin-left: auto;
-}
-
-.my_btn11 {
-  padding: 1.5em 1.5em;
-  font-size: 2.2em;
-  background-color: #64bc7e;
-  border-color: #64bc7e;
-  position: relative;
-  z-index: 1;
-}
-
-.my_btn11:hover {
-  background-color: #64bc7e;
-  border-color: #64bc7e;
-}
-
-.my_btn11:after {
-  content: " ";
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  z-index: -1;
-  transform: scaleX(1);
-  transform-origin: right;
-  transition: transform 500ms ease-in;
-}
-
-.my_btn11:hover::after {
-  transform: scaleX(0);
-  transform-origin: left;
-}
-
-.sec-category h2 {
-  font-size: 2.2em;
-  text-align: center;
-}
-.pre_span {
-  display: inline-block !important;
-}
-
-.btt_div {
-  padding-bottom: 1em;
-  padding-top: 2em;
-}
-
-@media screen and (min-width: 768px) {
-  .my_btn {
-    padding: 1.5em 1.5em;
-    font-size: 1.5em;
-  }
-
-  .my_btn11 {
-    padding: 1.5em 1.5em;
-    font-size: 1.5em;
-  }
-}
-
-@media screen and (min-width: 800px) {
-  .sec-category {
-    padding: 2em 0em 2em 10px;
-    margin-right: 0em;
-    margin-left: 6em;
-    margin-top: 2em;
-    width: 55vw;
-  }
-  .my_btn,
-  .my_btn11 {
-    padding: 0.9em 1.2em;
-    font-size: 1.2em;
-  }
-}
-
-@media screen and (min-width: 1004px) {
-  .my_btn,
-  .my_btn11 {
-    font-size: 1em;
-  }
-}
-@media screen and (min-width: 1063px) {
-  .my_btn,
-  .my_btn11 {
-    font-size: 1em;
-    padding: 2em 1.2em;
-  }
-}
-
-/* Section Text */
-.sec_txt {
-  width: 100vw;
-  padding: 2.5em 1em 1.5em 1em;
-}
-.sec_txt h2 {
-  text-align: center;
-  font-size: 1.5em;
-}
-@media screen and (min-width: 800px) {
-  .sec_txt {
-    width: 50vw;
-    margin-left: 6em;
-    padding: 2.5em 1em 1.5em 10px;
-  }
-}
-
-/* My footer start here */
 footer {
   display: flex;
   align-items: center;
